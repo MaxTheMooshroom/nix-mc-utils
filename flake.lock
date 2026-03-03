@@ -1,0 +1,310 @@
+{
+  "nodes": {
+    "flake-module": {
+      "flake": false,
+      "locked": {
+        "path": "flake-module.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "flake-module.nix",
+        "type": "path"
+      },
+      "parent": []
+    },
+    "flake-modules": {
+      "inputs": {
+        "flake-parts": "flake-parts_2",
+        "lib-module": "lib-module",
+        "nixpkgs-lib": [
+          "packsquash",
+          "flake-modules",
+          "flake-parts",
+          "nixpkgs-lib"
+        ],
+        "overlays-module": "overlays-module"
+      },
+      "locked": {
+        "lastModified": 1772508585,
+        "narHash": "sha256-AmVDHSFv/eCS6P9fOCC0PfjvPFRkBQJJ25GrvBTLWCw=",
+        "owner": "MaxTheMooshroom",
+        "repo": "flake-modules",
+        "rev": "65675fe23cbe0556c2dca93f67793bf2497bc0e9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MaxTheMooshroom",
+        "repo": "flake-modules",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1772408722,
+        "narHash": "sha256-rHuJtdcOjK7rAHpHphUb1iCvgkU3GpfvicLMwwnfMT0=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "f20dc5d9b8027381c474144ecabc9034d6a839a3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "flake-parts_2": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib_2"
+      },
+      "locked": {
+        "lastModified": 1772408722,
+        "narHash": "sha256-rHuJtdcOjK7rAHpHphUb1iCvgkU3GpfvicLMwwnfMT0=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "f20dc5d9b8027381c474144ecabc9034d6a839a3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "lib-module": {
+      "flake": false,
+      "locked": {
+        "path": "modules/lib.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "modules/lib.nix",
+        "type": "path"
+      },
+      "parent": [
+        "packsquash",
+        "flake-modules"
+      ]
+    },
+    "mk-squash-config": {
+      "flake": false,
+      "locked": {
+        "path": "lib/mk-squash-config.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "lib/mk-squash-config.nix",
+        "type": "path"
+      },
+      "parent": [
+        "packsquash"
+      ]
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1764521362,
+        "narHash": "sha256-M101xMtWdF1eSD0xhiR8nG8CXRlHmv6V+VoY65Smwf4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "871b9fd269ff6246794583ce4ee1031e1da71895",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "25.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-lib": {
+      "locked": {
+        "lastModified": 1772328832,
+        "narHash": "sha256-e+/T/pmEkLP6BHhYjx6GmwP5ivonQQn0bJdH9YrRB+Q=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "c185c7a5e5dd8f9add5b2f8ebeff00888b070742",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs-lib_2": {
+      "locked": {
+        "lastModified": 1772328832,
+        "narHash": "sha256-e+/T/pmEkLP6BHhYjx6GmwP5ivonQQn0bJdH9YrRB+Q=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "c185c7a5e5dd8f9add5b2f8ebeff00888b070742",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "overlays-module": {
+      "flake": false,
+      "locked": {
+        "path": "modules/overlays.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "modules/overlays.nix",
+        "type": "path"
+      },
+      "parent": [
+        "packsquash",
+        "flake-modules"
+      ]
+    },
+    "package": {
+      "flake": false,
+      "locked": {
+        "path": "package.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "package.nix",
+        "type": "path"
+      },
+      "parent": [
+        "packsquash"
+      ]
+    },
+    "packsquash": {
+      "inputs": {
+        "flake-modules": "flake-modules",
+        "flake-parts": [
+          "flake-parts"
+        ],
+        "mk-squash-config": "mk-squash-config",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nixpkgs-lib": [
+          "nixpkgs-lib"
+        ],
+        "package": "package",
+        "packsquash": "packsquash_2",
+        "packsquash-overlay": "packsquash-overlay",
+        "rust-nightly": "rust-nightly",
+        "rust-overlay": "rust-overlay",
+        "squash-pack": "squash-pack"
+      },
+      "locked": {
+        "lastModified": 1772509772,
+        "narHash": "sha256-ZuptZ4lgkCtmdFoyVKxNt+rkhB3D8LKTpGGPZ4Mxb0o=",
+        "owner": "MaxTheMooshroom",
+        "repo": "packsquash-nix",
+        "rev": "04b2bf922ff2d20a9c29e27e0268a06a8d120522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MaxTheMooshroom",
+        "repo": "packsquash-nix",
+        "type": "github"
+      }
+    },
+    "packsquash-overlay": {
+      "flake": false,
+      "locked": {
+        "path": "overlays/packsquash.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "overlays/packsquash.nix",
+        "type": "path"
+      },
+      "parent": [
+        "packsquash"
+      ]
+    },
+    "packsquash_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1767304505,
+        "narHash": "sha256-c2nVG9qjla3E5O5oD57+KxYh21Iu+fL1LFNC+rw6QR0=",
+        "owner": "ComunidadAylas",
+        "repo": "PackSquash",
+        "rev": "7446d5e3605be41a77db1debf888ecbd192ce705",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ComunidadAylas",
+        "ref": "v0.4.1",
+        "repo": "PackSquash",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-module": "flake-module",
+        "flake-parts": "flake-parts",
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-lib": [
+          "flake-parts",
+          "nixpkgs-lib"
+        ],
+        "packsquash": "packsquash"
+      }
+    },
+    "rust-nightly": {
+      "flake": false,
+      "locked": {
+        "path": "rust-nightly.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "rust-nightly.nix",
+        "type": "path"
+      },
+      "parent": [
+        "packsquash"
+      ]
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "packsquash",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1772507320,
+        "narHash": "sha256-GdGXniFvtIfRiakc+ncdQYnoQjKbTCv9Imjfl4ggquI=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "1775eafa1879ac098ee436849bc9c3d963206f89",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "squash-pack": {
+      "flake": false,
+      "locked": {
+        "path": "lib/squash-pack.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "lib/squash-pack.nix",
+        "type": "path"
+      },
+      "parent": [
+        "packsquash"
+      ]
+    }
+  },
+  "root": "root",
+  "version": 7
+}
